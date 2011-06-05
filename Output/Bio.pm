@@ -26,7 +26,7 @@ sub err_bio {
 		# Title.
 		# XXX Add class.
 		my $title = '------------- EXCEPTION -------------';
-		$ret .= $title;
+		$ret .= $title."\n";
 
 		# Error.
 		$ret .= 'MSG: '.$e."\n";
@@ -56,7 +56,7 @@ sub err_bio {
 		}
 
 		# Footer.
-		my $footer = length($title);
+		my $footer = ('-' x length($title))."\n";
 		$ret .= $footer;
 	}
 	return $ret;
