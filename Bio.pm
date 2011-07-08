@@ -34,7 +34,7 @@ sub err {
 		&& none { $_ eq $EVAL || $_ =~ m/^eval '/ms }
 		map { $_->{'sub'} } @{$stack_ar}) {
 
-		die err_bio($errors_ar);
+		die err_bio(@{$errors_ar});
 
 	# Die for eval.
 	} else {
