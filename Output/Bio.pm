@@ -17,9 +17,9 @@ our $VERSION = 0.01;
 
 # Bio error print.
 sub err_bio {
-	my $errors_ar = shift;
+	my @errors = @_;
 	my $ret;
-	foreach my $error_hr (@{$errors_ar}) {
+	foreach my $error_hr (@errors) {
 		my $e = shift @{$error_hr->{'msg'}};
 		chomp $e;
 
