@@ -19,7 +19,6 @@ WriteMakefile(
 	},
 	'PM' => {
 		'Bio.pm' => '$(INST_LIBDIR)/Bio.pm',
-		'Output/Bio.pm' => '$(INST_LIBDIR)/Output/Bio.pm',
 	},
 	'LICENSE' => 'bsd',
 	'NAME' => 'Error::Pure::Bio',
